@@ -1,0 +1,21 @@
+{
+	code: "tunnler",
+	tool: "pickaxe",
+	class: "tunnler",
+	texture: { base: "item/tunnler" },
+	creativeinventory: { "general": ["*"], "items": ["*"] },
+	damagedby: ["blockbreaking", "attacking"],
+	miningspeedbytype: {
+		"*": {
+			"stone": 2.5,
+			"ore": 2.5,
+			"metal": 2.5
+		}
+	},
+	attackpowerbytype: {
+		"*": 1
+	},
+	durabilitybytype: {
+		"*": 60
+	}
+}
