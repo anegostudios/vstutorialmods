@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <Reference Include="VintagestoryAPI">
-      <HintPath>..\..\..\..\..\..\AppData\Roaming\Vintagestory\VintagestoryAPI.dll</HintPath>
+      <HintPath>$(AppData)\Vintagestory\VintagestoryAPI.dll</HintPath>
     </Reference>
   </ItemGroup>
 
