@@ -1,8 +1,11 @@
 {
   "type": "code",
   "name": "Ticking",
-  "description" : "Tick! Tack!",
+  "description": "Tick! Tack!",
   "author": "CreativeMD",
   "version": "1.0",
+  "dependency": {
+    "game": "1.5.3"
+  },
   "website": "http://wiki.vintagestory.at/index.php?title=Block_Entity"
 }

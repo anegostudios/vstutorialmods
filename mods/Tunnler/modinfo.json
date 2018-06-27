@@ -4,5 +4,8 @@
   "description": "Mining ...",
   "author": "CreativeMD",
   "version": "1.0",
+  "dependency": {
+    "game": "1.5.3"
+  },
   "website": "http://wiki.vintagestory.at/index.php?title=Advanced_Items"
 }
