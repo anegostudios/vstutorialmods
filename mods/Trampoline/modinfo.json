@@ -1,8 +1,11 @@
 {
   "type": "code",
   "name": "Trampoline",
-  "description" : "Fun! Even for old people",
+  "description": "Fun! Even for old people",
   "author": "CreativeMD",
   "version": "1.0",
+  "dependency": {
+    "game": "1.5.3"
+  },
   "website": "http://wiki.vintagestory.at/index.php?title=Advanced_Blocks"
 }
