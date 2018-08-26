@@ -21,11 +21,12 @@ namespace ExampleMods
         public override void StartServerSide(ICoreServerAPI api)
         {
             base.StartServerSide(api);
-            api.RegisterCommand("here", "spawns particles around the player", "[player]",
+            AssetLocation sound = new AssetLocation("here", "sounds/partyhorn");
+            api.RegisterCommand("here", "spawns particles around the player", "",
                 (IServerPlayer player, int groupId, CmdArgs args) =>
                     {
                         IEntityPlayer byEntity = player.Entity;
-                        byEntity.World.PlaySoundAt(new AssetLocation("here", "sounds/partyhorn"), byEntity);
+                        byEntity.World.PlaySoundAt(sound, byEntity);
                         Vec3d pos = byEntity.Pos.XYZ.Add(0, byEntity.EyeHeight(), 0);
                         Random rand = new Random();
                         for (int i = 0; i < 100; i++)
