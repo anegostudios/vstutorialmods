@@ -49,31 +49,33 @@
 
     <Reference Include="VintagestoryAPI">
       <HintPath>$(AppData)\Vintagestory\VintagestoryAPI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
 
     <Reference Include="VSSurvivalMod">
       <HintPath>$(AppData)\Vintagestory\Mods\VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
     </Reference>
 
     <Reference Include="VSEssentials">
       <HintPath>$(AppData)\Vintagestory\Mods\VSEssentials.dll</HintPath>
+      <Private>False</Private>
     </Reference>
 
     <Reference Include="VSCreativeMod">
       <HintPath>$(AppData)\Vintagestory\Mods\VSCreativeMod.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\" />
-    <Content Include="assets\moving\blocktypes\moving.json" />
+    <Folder Include="assets\" /><Content Include="assets\moving\blocktypes\moving.json" />
 <Content Include="assets\moving\lang\en.json" />
 <Content Include="assets\moving\textures\block\moving.png" />
 
     <Folder Include="src\" />
-    <Content Include="src\MovingBlocks.cs" />
+    <Content Include="modinfo.json" /><Compile Include="src\MovingBlocks.cs" />
 
-    <Content Include="modinfo.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

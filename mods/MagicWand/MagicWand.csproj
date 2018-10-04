@@ -49,31 +49,33 @@
 
     <Reference Include="VintagestoryAPI">
       <HintPath>$(AppData)\Vintagestory\VintagestoryAPI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
 
     <Reference Include="VSSurvivalMod">
       <HintPath>$(AppData)\Vintagestory\Mods\VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
     </Reference>
 
     <Reference Include="VSEssentials">
       <HintPath>$(AppData)\Vintagestory\Mods\VSEssentials.dll</HintPath>
+      <Private>False</Private>
     </Reference>
 
     <Reference Include="VSCreativeMod">
       <HintPath>$(AppData)\Vintagestory\Mods\VSCreativeMod.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\" />
-    <Content Include="assets\magicwand\itemtypes\magicwand.json" />
+    <Folder Include="assets\" /><Content Include="assets\magicwand\itemtypes\magicwand.json" />
 <Content Include="assets\magicwand\lang\en.json" />
 <Content Include="assets\magicwand\textures\item\magicwand.png" />
 
     <Folder Include="src\" />
-    <Content Include="src\Magic.cs" />
+    <Content Include="modinfo.json" /><Compile Include="src\Magic.cs" />
 
-    <Content Include="modinfo.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

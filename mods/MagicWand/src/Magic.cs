@@ -26,7 +26,7 @@ namespace ExampleMods
 
         public static SimpleParticleProperties particles = new SimpleParticleProperties(
                     1, 1,
-                    ColorUtil.ColorFromArgb(50, 220, 220, 220),
+                    ColorUtil.ToRgba(50, 220, 220, 220),
                     new Vec3d(),
                     new Vec3d(),
                     new Vec3f(-0.25f, 0.1f, -0.25f),
@@ -38,9 +38,9 @@ namespace ExampleMods
                     EnumParticleModel.Quad
                 );
 
-        public override bool OnHeldInteractStart(IItemSlot slot, IEntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel)
+        public override void OnHeldInteractStart(IItemSlot slot, IEntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, ref EnumHandHandling handling)
         {
-            return true;
+            handling = EnumHandHandling.Handled;
         }
 
         public override bool OnHeldInteractStep(float secondsUsed, IItemSlot slot, IEntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel)
@@ -58,19 +58,19 @@ namespace ExampleMods
                 tf.Origin.Set(0, 2f, 0);
                 tf.Translation.Set(0, Math.Max(-1f, -5 * Math.Max(0, secondsUsed - 0.25f)), 0);
                 tf.Rotation.Z = rotationZ;
-                byEntity.Controls.UsingHeldItemTransform = tf;
+                byEntity.Controls.UsingHeldItemTransformAfter = tf;
 
                 if (secondsUsed > 0.6)
                 {
                     Vec3d pos =
-                            byEntity.Pos.XYZ.Add(0, byEntity.EyeHeight(), 0)
+                            byEntity.Pos.XYZ.Add(0, byEntity.EyeHeight, 0)
                             .Ahead(1f, byEntity.Pos.Pitch, byEntity.Pos.Yaw)
                         ;
 
                     Vec3f speedVec = new Vec3d(0, 0, 0).Ahead(5, byEntity.Pos.Pitch, byEntity.Pos.Yaw).ToVec3f();
                     particles.minVelocity = speedVec;
                     Random rand = new Random();
-                    particles.color = ColorUtil.ToRGBABytes(ColorUtil.ColorFromArgb(255, rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255)));
+                    particles.color = ColorUtil.ToRgba(255, rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255));
                     particles.minPos = pos.AddCopy(-0.05, -0.05, -0.05);
                     particles.addPos.Set(0.1, 0.1, 0.1);
                     particles.minSize = 0.1F;

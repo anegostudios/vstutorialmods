@@ -49,31 +49,33 @@
 
     <Reference Include="VintagestoryAPI">
       <HintPath>$(AppData)\Vintagestory\VintagestoryAPI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
 
     <Reference Include="VSSurvivalMod">
       <HintPath>$(AppData)\Vintagestory\Mods\VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
     </Reference>
 
     <Reference Include="VSEssentials">
       <HintPath>$(AppData)\Vintagestory\Mods\VSEssentials.dll</HintPath>
+      <Private>False</Private>
     </Reference>
 
     <Reference Include="VSCreativeMod">
       <HintPath>$(AppData)\Vintagestory\Mods\VSCreativeMod.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\" />
-    <Content Include="assets\tunnler\itemtypes\tunnler.json" />
+    <Folder Include="assets\" /><Content Include="assets\tunnler\itemtypes\tunnler.json" />
 <Content Include="assets\tunnler\lang\en.json" />
 <Content Include="assets\tunnler\textures\item\tunnler.png" />
 
     <Folder Include="src\" />
-    <Content Include="src\Tunnler.cs" />
+    <Content Include="modinfo.json" /><Compile Include="src\Tunnler.cs" />
 
-    <Content Include="modinfo.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

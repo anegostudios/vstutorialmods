@@ -49,31 +49,33 @@
 
     <Reference Include="VintagestoryAPI">
       <HintPath>$(AppData)\Vintagestory\VintagestoryAPI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
 
     <Reference Include="VSSurvivalMod">
       <HintPath>$(AppData)\Vintagestory\Mods\VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
     </Reference>
 
     <Reference Include="VSEssentials">
       <HintPath>$(AppData)\Vintagestory\Mods\VSEssentials.dll</HintPath>
+      <Private>False</Private>
     </Reference>
 
     <Reference Include="VSCreativeMod">
       <HintPath>$(AppData)\Vintagestory\Mods\VSCreativeMod.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\" />
-    <Content Include="assets\trampoline\blocktypes\trampoline.json" />
+    <Folder Include="assets\" /><Content Include="assets\trampoline\blocktypes\trampoline.json" />
 <Content Include="assets\trampoline\lang\en.json" />
 <Content Include="assets\trampoline\textures\block\trampoline.png" />
 
     <Folder Include="src\" />
-    <Content Include="src\Trampoline.cs" />
+    <Content Include="modinfo.json" /><Compile Include="src\Trampoline.cs" />
 
-    <Content Include="modinfo.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

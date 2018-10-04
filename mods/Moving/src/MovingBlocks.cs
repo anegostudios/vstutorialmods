@@ -27,7 +27,7 @@ namespace ExampleMods
 
         }
 
-        public override bool OnPlayerBlockInteract(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel, ref EnumHandling handling)
+        public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel, ref EnumHandling handling)
         {
             BlockPos pos = blockSel.Position.AddCopy(blockSel.Face.GetOpposite());
             if (world.BlockAccessor.GetBlock(pos).IsReplacableBy(block))
