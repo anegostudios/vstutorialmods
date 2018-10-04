@@ -69,15 +69,13 @@
     
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\" />
-    <Content Include="assets\tunnler\itemtypes\tunnler.json" />
+    <Folder Include="assets\" /><Content Include="assets\tunnler\itemtypes\tunnler.json" />
 <Content Include="assets\tunnler\lang\en.json" />
 <Content Include="assets\tunnler\textures\item\tunnler.png" />
 
     <Folder Include="src\" />
-    <Content Include="src\Tunnler.cs" />
+    <Content Include="modinfo.json" /><Compile Include="src\Tunnler.cs" />
 
-    <Content Include="modinfo.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

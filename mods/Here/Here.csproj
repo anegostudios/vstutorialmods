@@ -69,13 +69,11 @@
     
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\" />
-    <Content Include="assets\here\sounds\partyhorn.ogg" />
+    <Folder Include="assets\" /><Content Include="assets\here\sounds\partyhorn.ogg" />
 
     <Folder Include="src\" />
-    <Content Include="src\Command.cs" />
+    <Content Include="modinfo.json" /><Compile Include="src\Command.cs" />
 
-    <Content Include="modinfo.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

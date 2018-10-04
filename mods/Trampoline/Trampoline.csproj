@@ -69,15 +69,13 @@
     
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\" />
-    <Content Include="assets\trampoline\blocktypes\trampoline.json" />
+    <Folder Include="assets\" /><Content Include="assets\trampoline\blocktypes\trampoline.json" />
 <Content Include="assets\trampoline\lang\en.json" />
 <Content Include="assets\trampoline\textures\block\trampoline.png" />
 
     <Folder Include="src\" />
-    <Content Include="src\Trampoline.cs" />
+    <Content Include="modinfo.json" /><Compile Include="src\Trampoline.cs" />
 
-    <Content Include="modinfo.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

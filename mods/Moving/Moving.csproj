@@ -69,15 +69,13 @@
     
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\" />
-    <Content Include="assets\moving\blocktypes\moving.json" />
+    <Folder Include="assets\" /><Content Include="assets\moving\blocktypes\moving.json" />
 <Content Include="assets\moving\lang\en.json" />
 <Content Include="assets\moving\textures\block\moving.png" />
 
     <Folder Include="src\" />
-    <Content Include="src\MovingBlocks.cs" />
+    <Content Include="modinfo.json" /><Compile Include="src\MovingBlocks.cs" />
 
-    <Content Include="modinfo.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
