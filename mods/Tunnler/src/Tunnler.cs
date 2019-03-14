@@ -37,13 +37,13 @@ namespace ExampleMods
             }
         }
 
-        public override bool OnBlockBrokenWith(IWorldAccessor world, IEntity byEntity, IItemSlot itemslot, BlockSelection blockSel)
+        public override bool OnBlockBrokenWith(IWorldAccessor world, Entity byEntity, IItemSlot itemslot, BlockSelection blockSel)
         {
             if (base.OnBlockBrokenWith(world, byEntity, itemslot, blockSel))
             {
-                if (byEntity is IEntityPlayer)
+                if (byEntity is EntityPlayer)
                 {
-                    IPlayer player = world.PlayerByUid((byEntity as IEntityPlayer).PlayerUID);
+                    IPlayer player = world.PlayerByUid((byEntity as EntityPlayer).PlayerUID);
                     switch (blockSel.Face.Axis)
                     {
                         case EnumAxis.X:
