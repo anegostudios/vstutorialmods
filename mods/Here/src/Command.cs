@@ -25,7 +25,7 @@ namespace ExampleMods
             api.RegisterCommand("here", "spawns particles around the player", "",
                 (IServerPlayer player, int groupId, CmdArgs args) =>
                     {
-                        IEntityPlayer byEntity = player.Entity;
+                        EntityPlayer byEntity = player.Entity;
                         byEntity.World.PlaySoundAt(sound, byEntity);
                         Vec3d pos = byEntity.Pos.XYZ.Add(0, byEntity.EyeHeight, 0);
                         Random rand = new Random();
