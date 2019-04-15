@@ -9,7 +9,7 @@
     "x": 0.4,
     "y": 0.5
   },
-  "eyeHeight": 1.2,
+  "eyeHeight": 0.4,
   "drops": [],
   "client": {
     "renderer": "Shape",

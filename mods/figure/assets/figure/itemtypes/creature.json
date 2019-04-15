@@ -5,11 +5,11 @@
   "variantgroups": [
     {
       "code": "type",
-      "states": [ "soldier:littlefigure" ]
+      "states": [ "figure:littlefigure" ]
     }
   ],
   "shape": {
-    "base": "soldier:entity/land/littlefigure"
+    "base": "figure:entity/land/littlefigure"
   },
   "texture": { "base": "game:block/wood/planks/birch1" },
   "creativeinventory": {
