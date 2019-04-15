@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{72AA1E1C-C3F1-45FA-B79D-C80113F1125B}</ProjectGuid>
+    <ProjectGuid>{B495A005-D18B-49D4-A8E8-7A83CCB2BD30}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>soldier</RootNamespace>
-    <AssemblyName>soldier</AssemblyName>
+    <RootNamespace>figure</RootNamespace>
+    <AssemblyName>figure</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -16,8 +16,8 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\bin\Debug\soldier\</OutputPath>
-    <IntermediateOutputPath>..\..\obj\Debug\soldier\</IntermediateOutputPath>
+    <OutputPath>..\..\bin\Debug\figure\</OutputPath>
+    <IntermediateOutputPath>..\..\obj\Debug\figure\</IntermediateOutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,8 +25,8 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\bin\Release\soldier\</OutputPath>
-    <IntermediateOutputPath>..\..\obj\Release\soldier\</IntermediateOutputPath>
+    <OutputPath>..\..\bin\Release\figure\</OutputPath>
+    <IntermediateOutputPath>..\..\obj\Release\figure\</IntermediateOutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -61,15 +61,15 @@
     <Content Include="modinfo.json" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\soldier\entities\land\littlefigure.json" />
-    <None Include="assets\soldier\itemtypes\creature.json" />
-    <None Include="assets\soldier\shapes\entity\land\littlefigure.json" />
-    <None Include="assets\soldier\sounds\creature\figure-death.ogg" />
-    <None Include="assets\soldier\sounds\creature\figure-hurt.ogg" />
-    <None Include="assets\soldier\sounds\creature\figure-idle1.ogg" />
-    <None Include="assets\soldier\sounds\creature\figure-idle2.ogg" />
-    <None Include="assets\soldier\sounds\creature\figure-idle3.ogg" />
-    <None Include="assets\soldier\sounds\creature\figure-idle4.ogg" />
+    <None Include="assets\figure\entities\land\littlefigure.json" />
+    <None Include="assets\figure\itemtypes\creature.json" />
+    <None Include="assets\figure\shapes\entity\land\littlefigure.json" />
+    <None Include="assets\figure\sounds\creature\figure-death.ogg" />
+    <None Include="assets\figure\sounds\creature\figure-hurt.ogg" />
+    <None Include="assets\figure\sounds\creature\figure-idle1.ogg" />
+    <None Include="assets\figure\sounds\creature\figure-idle2.ogg" />
+    <None Include="assets\figure\sounds\creature\figure-idle3.ogg" />
+    <None Include="assets\figure\sounds\creature\figure-idle4.ogg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\" />

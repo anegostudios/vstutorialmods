@@ -1,7 +1,7 @@
 {
   "type": "content",
-  "modid": "soldier",
-  "name": "soldier",
+  "modid": "figure",
+  "name": "Little Figure",
   "author": "Unknown",
   "description": "A little soldier walking around",
   "version": "1.0.0",
