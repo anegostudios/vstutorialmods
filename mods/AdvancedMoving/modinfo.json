@@ -3,9 +3,9 @@
   "name": "AdvancedMovingBlocks",
   "description" : "I like to move it move it!",
   "author": "CreativeMD",
-  "version": "1.0",
+  "version": "1.0.0",
   "dependency": {
-    "game": "1.5.3"
+    "game": "1.8"
   },
   "website": "http://wiki.vintagestory.at/index.php?title=Adding_Block_Behavior"
 }

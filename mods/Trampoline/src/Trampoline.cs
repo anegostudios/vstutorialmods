@@ -18,7 +18,7 @@ namespace VSExampleMods
     {
         public AssetLocation tickSound = new AssetLocation("game", "sounds/tick");
 
-        public override void OnEntityCollide(IWorldAccessor world, Entity entity, BlockPos pos, BlockFacing facing, bool isImpact)
+        public override void OnEntityCollide(IWorldAccessor world, Entity entity, BlockPos pos, BlockFacing facing, Vec3d collideSpeed, bool isImpact)
         {
             if (isImpact && facing.Axis == EnumAxis.Y)
             {

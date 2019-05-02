@@ -37,7 +37,7 @@ namespace ExampleMods
             }
         }
 
-        public override bool OnBlockBrokenWith(IWorldAccessor world, Entity byEntity, IItemSlot itemslot, BlockSelection blockSel)
+        public override bool OnBlockBrokenWith(IWorldAccessor world, Entity byEntity, ItemSlot itemslot, BlockSelection blockSel)
         {
             if (base.OnBlockBrokenWith(world, byEntity, itemslot, blockSel))
             {

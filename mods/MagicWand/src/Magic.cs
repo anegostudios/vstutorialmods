@@ -38,26 +38,20 @@ namespace ExampleMods
                     EnumParticleModel.Quad
                 );
 
-        public override void OnHeldInteractStart(IItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, ref EnumHandHandling handling)
+        public override void OnHeldInteractStart(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handling)
         {
             handling = EnumHandHandling.Handled;
         }
 
-        public override bool OnHeldInteractStep(float secondsUsed, IItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel)
+        public override bool OnHeldInteractStep(float secondsUsed, ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel)
         {
             if (byEntity.World is IClientWorldAccessor)
             {
                 ModelTransform tf = new ModelTransform();
                 tf.EnsureDefaultValues();
 
-                float speed = 5 + 20 * Math.Max(0, secondsUsed - 0.25f);
-                float start = secondsUsed * 120;
-                float rotationZ = Math.Max(-110, start - Math.Max(0, secondsUsed - 0.25f) * 90 * speed);
-
-
-                tf.Origin.Set(0, 2f, 0);
-                tf.Translation.Set(0, Math.Max(-1f, -5 * Math.Max(0, secondsUsed - 0.25f)), 0);
-                tf.Rotation.Z = rotationZ;
+                tf.Origin.Set(0, -1, 0);
+                tf.Rotation.Z = Math.Min(30, secondsUsed * 40);
                 byEntity.Controls.UsingHeldItemTransformAfter = tf;
 
                 if (secondsUsed > 0.6)
