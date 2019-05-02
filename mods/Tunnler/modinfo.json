@@ -3,9 +3,9 @@
   "name": "Tunnler",
   "description": "Mining ...",
   "author": "CreativeMD",
-  "version": "1.0",
+  "version": "1.0.0",
   "dependency": {
-    "game": "1.5.3"
+    "game": "1.9"
   },
   "website": "http://wiki.vintagestory.at/index.php?title=Advanced_Items"
 }
