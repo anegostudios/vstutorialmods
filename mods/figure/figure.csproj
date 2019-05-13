@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -32,51 +32,63 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System"/>
+
+    <Reference Include="System.Core"/>
+    <Reference Include="System.Xml.Linq"/>
+    <Reference Include="System.Data.DataSetExtensions"/>
+
+
+    <Reference Include="Microsoft.CSharp"/>
+
+    <Reference Include="System.Data"/>
+
+    <Reference Include="System.Net.Http"/>
+
+    <Reference Include="System.Xml"/>
+
     <Reference Include="VintagestoryAPI">
       <HintPath>$(AppData)\Vintagestory\VintagestoryAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
+
     <Reference Include="VSSurvivalMod">
       <HintPath>$(AppData)\Vintagestory\Mods\VSSurvivalMod.dll</HintPath>
       <Private>False</Private>
     </Reference>
+
     <Reference Include="VSEssentials">
       <HintPath>$(AppData)\Vintagestory\Mods\VSEssentials.dll</HintPath>
       <Private>False</Private>
     </Reference>
+
     <Reference Include="VSCreativeMod">
       <HintPath>$(AppData)\Vintagestory\Mods\VSCreativeMod.dll</HintPath>
       <Private>False</Private>
     </Reference>
+
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(AppData)\Vintagestory\Lib\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    
   </ItemGroup>
   <ItemGroup>
-    <Content Include="modinfo.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="assets\figure\entities\land\littlefigure.json" />
-    <None Include="assets\figure\itemtypes\creature.json" />
-    <None Include="assets\figure\shapes\entity\land\littlefigure.json" />
-    <None Include="assets\figure\sounds\creature\figure-death.ogg" />
-    <None Include="assets\figure\sounds\creature\figure-hurt.ogg" />
-    <None Include="assets\figure\sounds\creature\figure-idle1.ogg" />
-    <None Include="assets\figure\sounds\creature\figure-idle2.ogg" />
-    <None Include="assets\figure\sounds\creature\figure-idle3.ogg" />
-    <None Include="assets\figure\sounds\creature\figure-idle4.ogg" />
-  </ItemGroup>
-  <ItemGroup>
+    <Folder Include="assets\" /><Content Include="assets\figure\entities\land\littlefigure.json" />
+<Content Include="assets\figure\itemtypes\creature.json" />
+<Content Include="assets\figure\shapes\entity\land\littlefigure.json" />
+<Content Include="assets\figure\sounds\creature\figure-death.ogg" />
+<Content Include="assets\figure\sounds\creature\figure-hurt.ogg" />
+<Content Include="assets\figure\sounds\creature\figure-idle1.ogg" />
+<Content Include="assets\figure\sounds\creature\figure-idle2.ogg" />
+<Content Include="assets\figure\sounds\creature\figure-idle3.ogg" />
+<Content Include="assets\figure\sounds\creature\figure-idle4.ogg" />
+
     <Folder Include="src\" />
+    <Content Include="modinfo.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent></PostBuildEvent>
   </PropertyGroup>
 </Project>
