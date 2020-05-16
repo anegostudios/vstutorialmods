@@ -1,11 +1,11 @@
 {
   "type": "code",
   "name": "Trampoline",
-  "description": "Fun! Even for old people",
-  "author": "CreativeMD",
+  "description": "Adds a bouncy trampoline to jump on!",
+  "author": "CreativeMD (updated by The_Lazy_Warlock)",
   "version": "1.0.0",
   "dependency": {
-    "game": "1.9"
+    "game": "1.12"
   },
-  "website": "http://wiki.vintagestory.at/index.php?title=Advanced_Blocks"
+  "website": "https://wiki.vintagestory.at/index.php?title=Modding:Advanced_Blocks"
 }

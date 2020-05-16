@@ -36,12 +36,12 @@ namespace ExampleMods
             timer++;
             if(timer > 60)
             {
-                Block block = api.World.BlockAccessor.GetBlock(pos);
+                Block block = Api.World.BlockAccessor.GetBlock(Pos);
                 if (block.Code.Path.EndsWith("-on"))
-                    block = api.World.GetBlock(block.CodeWithParts("off"));
+                    block = Api.World.GetBlock(block.CodeWithParts("off"));
                 else
-                    block = api.World.GetBlock(block.CodeWithParts("on"));
-                api.World.BlockAccessor.SetBlock(block.BlockId, pos);
+                    block = Api.World.GetBlock(block.CodeWithParts("on"));
+                Api.World.BlockAccessor.SetBlock(block.BlockId, Pos);
             }
         }
 
