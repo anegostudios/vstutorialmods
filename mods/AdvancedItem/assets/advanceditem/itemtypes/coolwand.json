@@ -1,15 +1,15 @@
 {
-  code: "coolwand",
-  creativeinventory: {
+  "code": "coolwand",
+  "creativeinventory": {
     "general": ["*"]
   },
-  variantgroups: [
+  "variantgroups": [
 		{
-    	code: "tooltype",
-    	states: ["shovel", "pickaxe", "axe"]
+    	"code": "tooltype",
+    	"states": ["shovel", "pickaxe", "axe"]
   	},
 	],
-  miningspeedByType: {
+  "miningspeedByType": {
     "*-shovel": {
       "soil": 7,
       "sand": 7,
@@ -24,13 +24,13 @@
       "leaves": 4
     }
   },
-  durabilityByType: {
+  "durabilityByType": {
     "*-shovel": 4000,
     "*-pickaxe": 3000,
     "*-axe": 2000,
   },
-	texture: {
-		base: "item/wand",
-		overlays: [ "item/wand-overlay-{tooltype}" ],
+	"texture": {
+		"base": "item/wand",
+		"overlays": [ "item/wand-overlay-{tooltype}" ],
 	},
 }

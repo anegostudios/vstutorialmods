@@ -1,9 +1,9 @@
 {
-  code: "wand",
-  creativeinventory: {
+  "code": "wand",
+  "creativeinventory": {
     "general": ["*"]
   },
-  texture: {
-    base: "item/wand"
+  "texture": {
+    "base": "item/wand"
   }
 }
