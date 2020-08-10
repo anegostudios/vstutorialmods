@@ -1,7 +1,7 @@
 {
   "type": "content",
-  "name": "Basic Item",
-  "description": "Adds a wand",
+  "name": "Basic Wand",
+  "description": "Adds a new shovel, pickaxe, and axe.",
   "authors": ["VeryGoodDog"],
   "version": "1.0.2",
   "dependency": {
