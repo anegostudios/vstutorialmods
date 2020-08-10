@@ -1,0 +1,10 @@
+{
+  "type": "code",
+  "name": "MyFirstCommand",
+  "description": "Adds a very simple command!",
+  "author": "VeryGoodDog",
+  "version": "1.0.0",
+  "dependency": {
+    "game": "1.13"
+  }
+}
